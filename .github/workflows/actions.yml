@@ -1,0 +1,35 @@
+name: utrust e2e testing manual run
+
+on:
+  workflow_dispatch:
+    inputs:
+        grep:
+          description: 'test tags'
+          required: false
+          default:
+        run:
+          required: false
+        testomatio:
+          required: false
+
+jobs:
+  test:
+    timeout-minutes: 60
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Node setup
+        uses: actions/setup-node@v2
+        with:
+          node-version: 16.x
+
+      - name: Installing dependency
+        run: npm install
+
+      - name: Setting up playwright
+        run: npx playwright install
+
+      - name: run testing scripts
+        run: xvfb-run -a npm run e2e stage
