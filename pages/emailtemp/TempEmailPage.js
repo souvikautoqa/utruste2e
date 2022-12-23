@@ -3,19 +3,22 @@ const assert = require("assert");
 
 module.exports = {
     elements : {
-        emailTrash: { id: "trsh_mail" },
+       // emailTrash: { id: "trsh_mail" },
+        emailTrash: { id: "emailAddress" },
         emailCopy: { xpath: ".//button[@data-original-title='Click To Copy!']" },
-        emailConfirmation: { xpath: ".//div[@class='message-item']//a[text()='Invoice to pay from Utrust Merchant']" }
+        //emailConfirmation: { xpath: ".//div[@class='message-item']//a[text()='Invoice to pay from Utrust Merchant']" }
+        emailConfirmation: { xpath: ".//div[@class='row metaRow']/div[text()='Invoice to pay from Utrust Merchant']" }
     },
     async getTempEmail() {
         await I.openNewTab();
         await utils.switchToNextAvailableTab();
         await I.amOnPage(envUris.trashMail);
         await utils.sleep(2000);
-        await I.click(this.elements.emailCopy);
-        const readFrom = new (require('readfrom'))();
-        await I.switchToPreviousTab();
-        return await readFrom.clipboard();
+        // await I.click(this.elements.emailCopy);
+        // const readFrom = new (require('readfrom'))();
+        // await I.switchToPreviousTab();
+        // return await readFrom.clipboard();
+        return await I.grabTextFrom(this.elements.emailTrash);
     },
     async verifyEmailReached(){
         await I.openNewTab();
