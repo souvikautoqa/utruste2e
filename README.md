@@ -38,7 +38,7 @@ The feature file should be stored under the `e2e/tests` folder, the aggregate sc
 
 The steps file should be stored under the `e2e/tests` folder, the aggregate scanner will pick it up from there
 
-- it should import the `I` actor, page objects and environment objects `envUris` and `envData` to use within the test
+- it should import the `I` actor as per the CodeceptJS documentation(https://codecept.io/basics/#architecture), page objects and environment objects `envUris` and `envData` to use within the test
 
 - it should contain glue code for all the sentences in the related .feature file
 
