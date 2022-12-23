@@ -1,4 +1,5 @@
 const { I, utils, emailPage, envData } = inject();
+const { state } = require("../../helpers/sceanrioState");
 
 module.exports = {
     elements : {
@@ -16,6 +17,7 @@ module.exports = {
         btnGenInvoiceAgain: { xpath : ".//button[@data-test='submit-new-invoice-button']" },
         btnGenInvoiceOk: { xpath : ".//button[@data-test='invoice-sent-ok']" },
         optionCountryCurrency :  ".//div[contains(text(),'@@replace')]",
+        btnCopyPaymentAddress: { xpath : ".//button[@aria-label='You can click on this button to copy automatically the value to your clipboard']"}
     },
     async createNewInvoice() {
         await I.click(this.elements.tabInvoices);
@@ -39,6 +41,9 @@ module.exports = {
         await I.fillField(this.elements.txtAmount, envData.NewInvoice.UserData.amount);
         await I.click(this.elements.btnGenInvoice);
         await I.click(this.elements.btnGenInvoiceAgain);
-        await I.click(this.elements.btnGenInvoiceOk);      
+        await I.click(this.elements.btnGenInvoiceOk);
+        await I.click(this.elements.btnCopyPaymentAddress);
+        const readFrom = new (require('readfrom'))();
+        state.data = { paymentLink : await readFrom.clipboard()};
     }
 }

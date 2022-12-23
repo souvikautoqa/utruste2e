@@ -7,7 +7,8 @@ module.exports = {
       postcode: "D24ANX2",
       country: "Ireland",
       currency: "EUR",
-      amount: "100.00"
+      amount: "100.00",
+      merchant: "Utrust Merchant"
     },
   },
 };

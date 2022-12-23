@@ -1,5 +1,4 @@
-const { I, loginPage, rightNav, paymentsPage, emailPage, utils} = inject();
-const assert = require("assert");
+const { I, loginPage, rightNav, paymentsPage, emailPage, utils, paymentLinkPage} = inject();
   
   Given("I am navigated to the payments page", async () => {
     await loginPage.performLogin();
@@ -11,5 +10,6 @@ const assert = require("assert");
   })
   
   Then("I should be able to validate that the invoice is created successfully", async () => {
-    console.log('I should be able to validate that the invoice is created successfully')
+    await paymentLinkPage.verifyDetails();
+    await emailPage.verifyEmailReached();
   });

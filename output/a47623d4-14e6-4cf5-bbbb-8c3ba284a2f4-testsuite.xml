@@ -1,0 +1,320 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671798226193' stop='1671798274147'>
+    <name>Testing utrust payments @payments</name>
+    <title>Testing utrust payments @payments</title>
+    <test-cases>
+        <test-case start='1671798226601' status='passed' stop='1671798274111'>
+            <name>Verify if New Invoice is created successfully</name>
+            <title>Verify if New Invoice is created successfully</title>
+            <labels>
+                <label name='tag' value='@payments'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1671798227093' status='passed' stop='1671798234005'>
+                    <name>Given I am navigated to the payments page </name>
+                    <title>Given I am navigated to the payments page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1671798227093' status='passed' stop='1671798232944'>
+                            <name>loginPage: performLogin </name>
+                            <title>loginPage: performLogin </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671798227093' status='passed' stop='1671798228379'>
+                                    <name>I am on page "https://merchants.sandbox-utrust.com/"</name>
+                                    <title>I am on page "https://merchants.sandbox-utrust.com/"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798228381' status='passed' stop='1671798229687'>
+                                    <name>I fill field {"id":"email"}, "souvikd.qtp@gmail.com"</name>
+                                    <title>I fill field {"id":"email"}, "souvikd.qtp@gmail.com"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798229687' status='passed' stop='1671798230888'>
+                                    <name>I fill field {"id":"password"}, "Utrust99!"</name>
+                                    <title>I fill field {"id":"password"}, "Utrust99!"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798230889' status='passed' stop='1671798231933'>
+                                    <name>I click {"xpath":".//button[@name='sign-in']"}</name>
+                                    <title>I click {"xpath":".//button[@name='sign-in']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798231934' status='passed' stop='1671798231937'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798231937' status='passed' stop='1671798232938'>
+                                    <name>I wait 1</name>
+                                    <title>I wait 1</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798232940' status='passed' stop='1671798232944'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1671798232944' status='passed' stop='1671798234005'>
+                            <name>rightNav: navToPayments </name>
+                            <title>rightNav: navToPayments </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671798232944' status='passed' stop='1671798233999'>
+                                    <name>I click {"xpath":".//a[@data-test='payments/orders-sidebarLink']"}</name>
+                                    <title>I click {"xpath":".//a[@data-test='payments/orders-sidebarLink']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798234001' status='passed' stop='1671798234004'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1671798234005' status='passed' stop='1671798258244'>
+                    <name>When I create a new invoice </name>
+                    <title>When I create a new invoice </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1671798234005' status='passed' stop='1671798258244'>
+                            <name>paymentsPage: createNewInvoice </name>
+                            <title>paymentsPage: createNewInvoice </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671798234005' status='passed' stop='1671798235043'>
+                                    <name>I click {"xpath":".//a[text()='Invoices']"}</name>
+                                    <title>I click {"xpath":".//a[text()='Invoices']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798235045' status='passed' stop='1671798236102'>
+                                    <name>I click {"xpath":"(.//button[@data-test='button-new-invoice'])[1]"}</name>
+                                    <title>I click {"xpath":"(.//button[@data-test='button-new-invoice'])[1]"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798236103' status='passed' stop='1671798236105'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798236105' status='passed' stop='1671798237128'>
+                                    <name>I open new tab </name>
+                                    <title>I open new tab </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798237128' status='passed' stop='1671798238486'>
+                                    <name>I am on page "https://emailtemp.org/en"</name>
+                                    <title>I am on page "https://emailtemp.org/en"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798240489' status='passed' stop='1671798241624'>
+                                    <name>I click {"xpath":".//button[@data-original-title='Click To Copy!']"}</name>
+                                    <title>I click {"xpath":".//button[@data-original-title='Click To Copy!']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798241632' status='passed' stop='1671798242634'>
+                                    <name>I switch to previous tab </name>
+                                    <title>I switch to previous tab </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798242685' status='passed' stop='1671798242697'>
+                                    <name>I close other tabs </name>
+                                    <title>I close other tabs </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798242697' status='passed' stop='1671798243889'>
+                                    <name>I fill field {"id":"customerName"}, "Souvik Dutta"</name>
+                                    <title>I fill field {"id":"customerName"}, "Souvik Dutta"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798243889' status='passed' stop='1671798245234'>
+                                    <name>I fill field {"id":"customerEmail"}, "fyowhka111@tormails.com"</name>
+                                    <title>I fill field {"id":"customerEmail"}, "fyowhka111@tormails.com"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798245235' status='passed' stop='1671798246421'>
+                                    <name>I fill field {"id":"billingAddress"}, "62 Parklands"</name>
+                                    <title>I fill field {"id":"billingAddress"}, "62 Parklands"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798246422' status='passed' stop='1671798247524'>
+                                    <name>I fill field {"id":"city"}, "Dublin"</name>
+                                    <title>I fill field {"id":"city"}, "Dublin"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798247524' status='passed' stop='1671798248645'>
+                                    <name>I fill field {"id":"postCode"}, "D24ANX2"</name>
+                                    <title>I fill field {"id":"postCode"}, "D24ANX2"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798248645' status='passed' stop='1671798249772'>
+                                    <name>I fill field {"id":"downshift-5-input"}, "Ireland"</name>
+                                    <title>I fill field {"id":"downshift-5-input"}, "Ireland"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798249773' status='passed' stop='1671798250817'>
+                                    <name>I click {"xpath":".//div[contains(text(),'Ireland')]"}</name>
+                                    <title>I click {"xpath":".//div[contains(text(),'Ireland')]"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798250818' status='passed' stop='1671798251887'>
+                                    <name>I fill field {"id":"downshift-4-input"}, "EUR"</name>
+                                    <title>I fill field {"id":"downshift-4-input"}, "EUR"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798251888' status='passed' stop='1671798252934'>
+                                    <name>I click {"xpath":".//div[contains(text(),'EUR')]"}</name>
+                                    <title>I click {"xpath":".//div[contains(text(),'EUR')]"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798252935' status='passed' stop='1671798254045'>
+                                    <name>I fill field {"id":"amount"}, "100.00"</name>
+                                    <title>I fill field {"id":"amount"}, "100.00"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798254045' status='passed' stop='1671798255089'>
+                                    <name>I click {"id":"generate-invoice-button"}</name>
+                                    <title>I click {"id":"generate-invoice-button"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798255090' status='passed' stop='1671798256134'>
+                                    <name>I click {"xpath":".//button[@data-test='submit-new-invoice-button']"}</name>
+                                    <title>I click {"xpath":".//button[@data-test='submit-new-invoice-button']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798256135' status='passed' stop='1671798257156'>
+                                    <name>I click {"xpath":".//button[@data-test='invoice-sent-ok']"}</name>
+                                    <title>I click {"xpath":".//button[@data-test='invoice-sent-ok']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798257156' status='passed' stop='1671798258193'>
+                                    <name>I click {"xpath":".//button[@aria-label='You can click on this button to copy automatically the value to your clipboard']"}</name>
+                                    <title>I click {"xpath":".//button[@aria-label='You can click on this button to copy automatically the value to your clipboard']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1671798258244' status='passed' stop='1671798274111'>
+                    <name>Then I should be able to validate that the invoice is created successfully </name>
+                    <title>Then I should be able to validate that the invoice is created successfully </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1671798258244' status='passed' stop='1671798261886'>
+                            <name>paymentLinkPage: verifyDetails </name>
+                            <title>paymentLinkPage: verifyDetails </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671798258244' status='passed' stop='1671798259261'>
+                                    <name>I open new tab </name>
+                                    <title>I open new tab </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798259262' status='passed' stop='1671798260852'>
+                                    <name>I am on page "https://payment.sandbox-utrust.com/invoices/04d9fbbb-2aeb-4519-aadd-286a007f3409"</name>
+                                    <title>I am on page "https://payment.sandbox-utrust.com/invoices/04d9fbbb-2aeb-4519-aadd-286a007f3409"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798260853' status='passed' stop='1671798260865'>
+                                    <name>I grab text from {"xpath":".//span[contains(@class,'Details_storeName')]"}</name>
+                                    <title>I grab text from {"xpath":".//span[contains(@class,'Details_storeName')]"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798260865' status='passed' stop='1671798260868'>
+                                    <name>I grab text from {"xpath":".//div[contains(@class,'Details_totalFiat')]"}</name>
+                                    <title>I grab text from {"xpath":".//div[contains(@class,'Details_totalFiat')]"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798260869' status='passed' stop='1671798261871'>
+                                    <name>I switch to previous tab </name>
+                                    <title>I switch to previous tab </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798261872' status='passed' stop='1671798261886'>
+                                    <name>I close other tabs </name>
+                                    <title>I close other tabs </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1671798261886' status='passed' stop='1671798274111'>
+                            <name>emailPage: verifyEmailReached </name>
+                            <title>emailPage: verifyEmailReached </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671798261886' status='passed' stop='1671798262911'>
+                                    <name>I open new tab </name>
+                                    <title>I open new tab </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798262911' status='passed' stop='1671798264100'>
+                                    <name>I am on page "https://emailtemp.org/en"</name>
+                                    <title>I am on page "https://emailtemp.org/en"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798264100' status='passed' stop='1671798274102'>
+                                    <name>I wait 10</name>
+                                    <title>I wait 10</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671798274102' status='passed' stop='1671798274111'>
+                                    <name>I grab text from {"xpath":".//div[@class='message-item']//a[text()='Invoice to pay from Utrust Merchant']"}</name>
+                                    <title>I grab text from {"xpath":".//div[@class='message-item']//a[text()='Invoice to pay from Utrust Merchant']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

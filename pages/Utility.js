@@ -45,4 +45,9 @@ module.exports = {
             }
         }
     },
+    async isVisible(loc){
+        const elements = await container.helpers("Playwright")._locate(loc);
+        const isDisplayed = (elements.length > 0) ? true : false;
+        return isDisplayed;
+    },
 }
