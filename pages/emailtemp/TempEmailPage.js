@@ -18,7 +18,10 @@ module.exports = {
         // const readFrom = new (require('readfrom'))();
         // await I.switchToPreviousTab();
         // return await readFrom.clipboard();
-        return await I.grabTextFrom(this.elements.emailTrash);
+        const email = await I.grabTextFrom(this.elements.emailTrash);
+        await I.switchToPreviousTab();
+        return email;
+        
     },
     async verifyEmailReached(){
         await I.openNewTab();
