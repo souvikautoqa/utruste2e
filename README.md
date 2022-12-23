@@ -47,11 +47,11 @@ The steps file should be stored under the `e2e/tests` folder, the aggregate scan
 ### Answer to the questions
 
 - Q: We want to run this scenario automatically and frequently. What process/setup/tools would you choose to achieve this?
-- A: I have created 2 GitHub actions worklow one for hourly build and other for manual run
+  - A: I have created 2 GitHub actions worklow one for hourly build and other for manual run
 
 - Q: On step 5, the system is supposed to send an email. How would you check if the email was really received to the email address?
-- A: I am creatign a temp email address before the test run and validating if the invoice email reaches to the same address
+  - A: I am creatign a temp email address before the test run and validating if the invoice email reaches to the same address
 
 - Q: How would you test the same scenario on different screen sizes?
-- A: I should be able to achieve this with a configuration change to load the browser with a specific dimension and then update the test to cater to the mobile view. I have not
+  - A: I should be able to achieve this with a configuration change to load the browser with a specific dimension and then update the test to cater to the mobile view. I have not
      implemented this here in the framework as I am going for vacation tomorrow so I have to pack :D
