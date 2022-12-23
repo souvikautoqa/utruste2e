@@ -7,10 +7,6 @@ on:
           description: 'test tags'
           required: false
           default:
-        run:
-          required: false
-        testomatio:
-          required: false
 
 jobs:
   test:
