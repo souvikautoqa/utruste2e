@@ -1,0 +1,113 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671782668627' stop='1671782687143'>
+    <name>Testing utrust payments @payments</name>
+    <title>Testing utrust payments @payments</title>
+    <test-cases>
+        <test-case start='1671782669031' status='failed' stop='1671782687018'>
+            <name>Verify if New Invoice is created successfully</name>
+            <title>Verify if New Invoice is created successfully</title>
+            <labels>
+                <label name='tag' value='@payments'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1671782669390' status='failed' stop='1671782687018'>
+                    <name>Given I am navigated to the payments page </name>
+                    <title>Given I am navigated to the payments page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1671782669390' status='passed' stop='1671782677350'>
+                            <name>loginPage: performLogin </name>
+                            <title>loginPage: performLogin </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671782669390' status='passed' stop='1671782670760'>
+                                    <name>I am on page "https://merchants.sandbox-utrust.com/"</name>
+                                    <title>I am on page "https://merchants.sandbox-utrust.com/"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782670762' status='passed' stop='1671782671824'>
+                                    <name>I clear field {"id":"email"}</name>
+                                    <title>I clear field {"id":"email"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782671826' status='passed' stop='1671782673120'>
+                                    <name>I fill field {"id":"email"}, "souvikd.qtp@gmail.com"</name>
+                                    <title>I fill field {"id":"email"}, "souvikd.qtp@gmail.com"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782673120' status='passed' stop='1671782674172'>
+                                    <name>I clear field {"id":"password"}</name>
+                                    <title>I clear field {"id":"password"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782674172' status='passed' stop='1671782675306'>
+                                    <name>I fill field {"id":"password"}, "Utrust99!"</name>
+                                    <title>I fill field {"id":"password"}, "Utrust99!"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782675306' status='passed' stop='1671782676342'>
+                                    <name>I click {"xpath":".//button[@name='sign-in']"}</name>
+                                    <title>I click {"xpath":".//button[@name='sign-in']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782676344' status='passed' stop='1671782676347'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782676348' status='passed' stop='1671782677348'>
+                                    <name>I wait 1</name>
+                                    <title>I wait 1</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782677349' status='passed' stop='1671782677350'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1671782677350' status='failed' stop='1671782687018'>
+                            <name>rightNav: navToPayments </name>
+                            <title>rightNav: navToPayments </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671782677350' status='passed' stop='1671782682352'>
+                                    <name>I wait 5</name>
+                                    <title>I wait 5</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671782682353' status='failed' stop='1671782687017'>
+                                    <name>I click </name>
+                                    <title>I click </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='3cc0ea49-c7c2-4b34-b08c-6ee61e5c9ce3-attachment.png' type='image/png' size='90853'/>
+            </attachments>
+            <failure>
+                <message>Cannot read properties of undefined (reading 'react')</message>
+                <stack-trace>TypeError: Cannot read properties of undefined (reading 'react')
+                    at Playwright.findClickable (/Users/souvikdutta/Documents/devwork/premia/utruste2etests/node_modules/codeceptjs/lib/helper/Playwright.js:2607:15)
+                    at Playwright.proceedClick (/Users/souvikdutta/Documents/devwork/premia/utruste2etests/node_modules/codeceptjs/lib/helper/Playwright.js:2583:35)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

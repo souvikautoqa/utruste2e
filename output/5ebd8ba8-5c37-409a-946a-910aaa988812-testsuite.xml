@@ -1,0 +1,165 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1671790299663' stop='1671790317112'>
+    <name>Testing utrust payments @payments</name>
+    <title>Testing utrust payments @payments</title>
+    <test-cases>
+        <test-case start='1671790300076' status='failed' stop='1671790316991'>
+            <name>Verify if New Invoice is created successfully</name>
+            <title>Verify if New Invoice is created successfully</title>
+            <labels>
+                <label name='tag' value='@payments'/>
+            </labels>
+            <parameters/>
+            <steps>
+                <step start='1671790300400' status='passed' stop='1671790309365'>
+                    <name>Given I am navigated to the payments page </name>
+                    <title>Given I am navigated to the payments page </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1671790300400' status='passed' stop='1671790308305'>
+                            <name>loginPage: performLogin </name>
+                            <title>loginPage: performLogin </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671790300400' status='passed' stop='1671790301686'>
+                                    <name>I am on page "https://merchants.sandbox-utrust.com/"</name>
+                                    <title>I am on page "https://merchants.sandbox-utrust.com/"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790301688' status='passed' stop='1671790302715'>
+                                    <name>I clear field {"id":"email"}</name>
+                                    <title>I clear field {"id":"email"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790302717' status='passed' stop='1671790304031'>
+                                    <name>I fill field {"id":"email"}, "souvikd.qtp@gmail.com"</name>
+                                    <title>I fill field {"id":"email"}, "souvikd.qtp@gmail.com"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790304032' status='passed' stop='1671790305101'>
+                                    <name>I clear field {"id":"password"}</name>
+                                    <title>I clear field {"id":"password"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790305102' status='passed' stop='1671790306238'>
+                                    <name>I fill field {"id":"password"}, "Utrust99!"</name>
+                                    <title>I fill field {"id":"password"}, "Utrust99!"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790306239' status='passed' stop='1671790307291'>
+                                    <name>I click {"xpath":".//button[@name='sign-in']"}</name>
+                                    <title>I click {"xpath":".//button[@name='sign-in']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790307291' status='passed' stop='1671790307296'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790307297' status='passed' stop='1671790308298'>
+                                    <name>I wait 1</name>
+                                    <title>I wait 1</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790308300' status='passed' stop='1671790308305'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                        <step start='1671790308305' status='passed' stop='1671790309365'>
+                            <name>rightNav: navToPayments </name>
+                            <title>rightNav: navToPayments </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671790308305' status='passed' stop='1671790309358'>
+                                    <name>I click {"xpath":".//a[@data-test='payments/orders-sidebarLink']"}</name>
+                                    <title>I click {"xpath":".//a[@data-test='payments/orders-sidebarLink']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790309360' status='passed' stop='1671790309364'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+                <step start='1671790309365' status='failed' stop='1671790316991'>
+                    <name>When I create a new invoice </name>
+                    <title>When I create a new invoice </title>
+                    <attachments/>
+                    <steps>
+                        <step start='1671790309365' status='failed' stop='1671790316991'>
+                            <name>paymentsPage: createNewInvoice </name>
+                            <title>paymentsPage: createNewInvoice </title>
+                            <attachments/>
+                            <steps>
+                                <step start='1671790309365' status='passed' stop='1671790310411'>
+                                    <name>I click {"xpath":".//a[text()='Invoices']"}</name>
+                                    <title>I click {"xpath":".//a[text()='Invoices']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790310411' status='passed' stop='1671790311442'>
+                                    <name>I click {"xpath":"(.//button[@data-test='button-new-invoice'])[1]"}</name>
+                                    <title>I click {"xpath":"(.//button[@data-test='button-new-invoice'])[1]"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790311443' status='passed' stop='1671790311447'>
+                                    <name>I grab current url </name>
+                                    <title>I grab current url </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790311448' status='passed' stop='1671790312511'>
+                                    <name>I open new tab </name>
+                                    <title>I open new tab </title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790312513' status='passed' stop='1671790313885'>
+                                    <name>I am on page "https://emailtemp.org/en"</name>
+                                    <title>I am on page "https://emailtemp.org/en"</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                                <step start='1671790315896' status='passed' stop='1671790316952'>
+                                    <name>I click {"xpath":".//button[@data-original-title='Click To Copy!']"}</name>
+                                    <title>I click {"xpath":".//button[@data-original-title='Click To Copy!']"}</title>
+                                    <attachments/>
+                                    <steps/>
+                                </step>
+                            </steps>
+                        </step>
+                    </steps>
+                </step>
+            </steps>
+            <attachments>
+                <attachment title='Last Seen Screenshot' source='44525e1e-c034-4856-9ea7-489cfe9e7c0a-attachment.png' type='image/png' size='78807'/>
+            </attachments>
+            <failure>
+                <message>email is not defined</message>
+                <stack-trace>ReferenceError: email is not defined
+                    at Object.getTempEmail (/Users/souvikdutta/Documents/devwork/premia/utruste2etests/pages/emailtemp/TempEmailPage.js:22:21)
+                    at async Object.createNewInvoice (/Users/souvikdutta/Documents/devwork/premia/utruste2etests/pages/utrust/PaymentsPage.js:12:9)
+                    at async /Users/souvikdutta/Documents/devwork/premia/utruste2etests/tests/steps/ui.e2e.steps.js:10:5
+                    at async runSteps (/Users/souvikdutta/Documents/devwork/premia/utruste2etests/node_modules/codeceptjs/lib/interfaces/gherkin.js:62:9)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

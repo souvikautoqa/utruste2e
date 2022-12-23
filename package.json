@@ -1,0 +1,21 @@
+{
+  "name": "utruste2etests",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "e2e": "codeceptjs run --steps --profile"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@wdio/cucumber-framework": "^8.0.13",
+    "axios": "^0.27.2",
+    "codeceptjs": "^3.3.7",
+    "codeceptjs-assert": "0.0.5",
+    "codeceptjs-browserlogs-plugin": "^1.0.4",
+    "dotenv": "^16.0.1",
+    "moment": "^2.29.4",
+    "playwright": "^1.26.1"
+  }
+}
