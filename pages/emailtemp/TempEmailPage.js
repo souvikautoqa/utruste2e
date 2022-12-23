@@ -14,10 +14,6 @@ module.exports = {
         await utils.switchToNextAvailableTab();
         await I.amOnPage(envUris.trashMail);
         await utils.sleep(2000);
-        // await I.click(this.elements.emailCopy);
-        // const readFrom = new (require('readfrom'))();
-        // await I.switchToPreviousTab();
-        // return await readFrom.clipboard();
         const email = await I.grabTextFrom(this.elements.emailTrash);
         await I.switchToPreviousTab();
         return email;
@@ -27,7 +23,7 @@ module.exports = {
         await I.openNewTab();
         await utils.switchToNextAvailableTab();
         await I.amOnPage(envUris.trashMail);
-        await I.wait(2);
+        await I.wait(10);
         assert.equal(await utils.isVisible(this.elements.emailConfirmation),true,'Invoice Email not reached');       
     }
 }

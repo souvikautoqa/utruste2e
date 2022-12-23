@@ -17,7 +17,8 @@ module.exports = {
         btnGenInvoiceAgain: { xpath : ".//button[@data-test='submit-new-invoice-button']" },
         btnGenInvoiceOk: { xpath : ".//button[@data-test='invoice-sent-ok']" },
         optionCountryCurrency :  ".//div[contains(text(),'@@replace')]",
-        btnCopyPaymentAddress: { xpath : ".//button[@aria-label='You can click on this button to copy automatically the value to your clipboard']"}
+       // btnCopyPaymentAddress: { xpath : ".//button[@aria-label='You can click on this button to copy automatically the value to your clipboard']"}
+        btnPaymentAddress: { xpath : ".//div[contains(@class,'CodeDisplay_text')]"}
     },
     async createNewInvoice() {
         await I.click(this.elements.tabInvoices);
@@ -42,8 +43,6 @@ module.exports = {
         await I.click(this.elements.btnGenInvoice);
         await I.click(this.elements.btnGenInvoiceAgain);
         await I.click(this.elements.btnGenInvoiceOk);
-        await I.click(this.elements.btnCopyPaymentAddress);
-        const readFrom = new (require('readfrom'))();
-        state.data = { paymentLink : await readFrom.clipboard()};
+        state.data = { paymentLink : await I.grabTextFrom(this.elements.btnPaymentAddress)};
     }
 }
